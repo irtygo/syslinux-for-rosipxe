@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: AutoBuild II
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Install dependancies
-      run: apt install uuid-dev
+      run: npm install uuid-dev
     - name: make
       run: make
     - name: make check
