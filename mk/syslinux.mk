@@ -53,7 +53,7 @@ gcc_ok   = $(shell tmpf=gcc_ok.$$$$.tmp; \
 		   then echo '$(1)'; else echo '$(2)'; fi; \
 		   rm -f $$tmpf)
 
-LD	 = ld
+LD	 = ld --allow-multiple-definition
 OBJDUMP	 = objdump
 OBJCOPY  = objcopy
 STRIP    = strip
