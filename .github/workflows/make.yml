@@ -19,7 +19,7 @@ jobs:
       run: sudo apt install uuid-dev nasm perl genisoimage mtools netpbm
     - name: make
       run: make
-        - name: Upload artifacts
+    - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: build-artifacts
