@@ -13,7 +13,7 @@
 #include <string.h>
 #include <getopt.h>
 
-char *optarg;
+extern char *optarg;
 extern int optind, opterr, optopt;
 static struct getopt_private_state {
 	const char *optptr;
