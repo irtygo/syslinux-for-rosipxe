@@ -18,7 +18,9 @@ jobs:
     - name: Install dependancies
       run: sudo apt install uuid-dev nasm perl genisoimage mtools netpbm
     - name: make
-      run: make
+      run: make -j$(nproc)
+    - name: Find memdisk file
+      run: find memdisk
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
